@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <link href="favicon.ico" rel="shortcut icon" type="Images/x-icon">
+        <title>Text Analyser</title>
+    </head>
+
+    <body>
+        <h1>Welcome to the text analyzer. <br> <br> Enter your text below</h1>
+        <form action='removePunc/result' method='get'>
+            <textarea name="text" placeholder="Enter your text here" style="margin: 0px; width: 724px; height: 233px;"></textarea>
+            <br>
+            <input type="checkbox" name="Remove punc"> Remove Punctuations<br>
+            <input type="checkbox" name="Character count with space"> Character count (with space)<br>
+            <input type="checkbox" name="Character count without space"> Character count (without space)<br>
+            <input type="checkbox" name="Word count"> Word count<br>
+            <input type="checkbox" name="Sentence count"> Sentence count<br>
+            <button type="submit">Analyse Text</button>
+        </form>
+    </body>
+</html>
