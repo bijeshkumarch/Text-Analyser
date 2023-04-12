@@ -1,47 +1,25 @@
-<!doctype html>
-    <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Text Analyser</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    </head>
-    <body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    </body>
-    </html>
+{% load static %}
 
-<!--Navigation bar-->
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Text Analyser</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/about">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="/contact">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-              <!--search-->
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+{% include 'header.html' %}
 
-            </div>
-          </nav>
+<br>
 
-<!--Alert-->
-<div class="alert alert-success alert-dismissible fade show" role="alert">
-    <strong>Welcome to Text Analyser!</strong> You can do anything with your text here.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
+<style>
+  #activate-contact {
+    color: white;
+  }
+  
+</style>
+
+<div class="container">
+  <h1>Contact Us</h1> <hr>
+  <p style="font-size: large;">Below are the ways you can contact us.</p><br>
+  <a href="mailto: bijeshchaurasia1@gmail.com"><img src="{% static 'images/gmail logo.png' %}" width="150"></a> - Mail us<br>
+  <a href="https://github.com/bijeshkumarch"><img src="{% static 'images/github logo.png' %}" width="100" style="position:relative; left:20px;"></a> <p style="display:inline; margin-left:50px">- GitHub</p><br>
+  <a href="https://www.linkedin.com/in/bijeshkumarch/"><img src="{% static 'images/linkedin logo.png' %}" width="100" style="position:relative; left:20px;"></a><p style="display:inline; margin-left:53px">- LinkedIn</p><br>
+  <a href="https://www.facebook.com/bijeshkchaurasiya"><img src="{% static 'images/fb logo.png' %}" width="150"></a> - Facebook<br>
+  <a href="https://www.instagram.com/bijesh_chaurasia/" > <img src="{% static 'images/instagram logo.jpg' %}" width="80" style="position:relative; left:30px;"> </a><p style="display:inline; margin-left:69px">- Instagram</p> <br>
+  <a href="https://wa.me/919934901498"><img src="{% static 'images/whatsapp logo.png' %}" width="80" style="position:relative; left:30px;"></a> <p style="display:inline; margin-left:69px">- Whatsapp</p><br>
+  <br>
+  <p style="position:absolute; font-size: 70px; margin-left:450px; margin-top: -330px; font-family: Edwardian Script ITC;">Thank you for visiting us!</p>
+</div>
